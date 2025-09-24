@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://g2ya0xuy8naq"
+path="res://.godot/imported/pizza-cutter.obj-31bccd0724efd2c1aae19e512ab4ea8c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pizza-cutter.obj-31bccd0724efd2c1aae19e512ab4ea8c.mesh"]
+
+source_file="res://Nobject/pizza-cutter.obj"
+dest_files=["res://.godot/imported/pizza-cutter.obj-31bccd0724efd2c1aae19e512ab4ea8c.mesh", "res://.godot/imported/pizza-cutter.obj-31bccd0724efd2c1aae19e512ab4ea8c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
