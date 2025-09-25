@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bqqgyqafm7xwp"]
+[gd_scene load_steps=28 format=3 uid="uid://bqqgyqafm7xwp"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ahusb"]
 [ext_resource type="Script" uid="uid://djpme521r3cxe" path="res://scripts/main.gd" id="1_jkv2x"]
@@ -20,6 +20,10 @@
 [ext_resource type="PackedScene" uid="uid://dsyjs1ekpgk4f" path="res://pizza.tscn" id="16_gqmmt"]
 [ext_resource type="FontFile" uid="uid://l4ba6ngi4flr" path="res://THSarabunNew Italic.ttf" id="16_jbj1t"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="17_tk810"]
+[ext_resource type="PackedScene" uid="uid://bdvsch88kwss3" path="res://hotdog.tscn" id="17_yc10j"]
+[ext_resource type="Texture2D" uid="uid://c70b7lspvrkl" path="res://Nobject/cutting-board-round.png" id="22_pm3ni"]
+[ext_resource type="ArrayMesh" uid="uid://dogn1rp2q8eri" path="res://Nobject/cutting-board-round.obj" id="23_y6deb"]
+[ext_resource type="ArrayMesh" uid="uid://tv28cc68l8q7" path="res://Nobject/fish.obj" id="24_y6deb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yc10j"]
 albedo_texture = ExtResource("14_gqmmt")
@@ -29,6 +33,9 @@ font = ExtResource("17_tk810")
 font_size = 48
 shadow_color = Color(0, 0, 0, 0.376471)
 shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_og1vs"]
+albedo_texture = ExtResource("22_pm3ni")
 
 [node name="Main" type="Node3D"]
 script = ExtResource("1_jkv2x")
@@ -51,6 +58,9 @@ current = true
 fov = 40.0
 
 [node name="World" type="Node3D" parent="."]
+
+[node name="Node3D5" parent="World" instance=ExtResource("16_gqmmt")]
+transform = Transform3D(0.329718, -0.128121, -0.935345, 0.362194, 0.932103, 0, 0.871838, -0.338776, 0.353736, 0, -0.27011, 2.49622)
 
 [node name="Node3D" parent="World" instance=ExtResource("5_0ld40")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 1.19387, -1.33169, -2.13424)
@@ -161,6 +171,9 @@ transform = Transform3D(0.476646, 0.924607, 0.941422, -0.929853, 0.945559, -0.45
 [node name="cube14" parent="World" instance=ExtResource("13_drtpy")]
 transform = Transform3D(1.56209, -1.37982, 1.71508, 1.97375, 1.80907, -0.342241, -0.974547, 1.4522, 2.05595, -14.152, 2.03819, 10.0652)
 
+[node name="cube15" parent="World" instance=ExtResource("13_drtpy")]
+transform = Transform3D(1.56209, -1.37982, 1.71508, 1.97375, 1.80907, -0.342241, -0.974547, 1.4522, 2.05595, -14.152, 2.03819, -11.8974)
+
 [node name="brick" parent="World" instance=ExtResource("12_jkv2x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11913, 1.98572, -0.0886177)
 
@@ -178,11 +191,26 @@ mesh = ExtResource("13_muem4")
 [node name="Node3D2" parent="World" instance=ExtResource("16_gqmmt")]
 transform = Transform3D(-3.73791, -1.3288, 0.512176, -0.526331, 2.62581, 2.97121, -1.32325, 2.70914, -2.62861, -14.3925, 2.0704, -6.12809)
 
+[node name="Node3D7" parent="World" instance=ExtResource("16_gqmmt")]
+transform = Transform3D(-0.656137, 0.504014, -0.561653, -0.131583, 0.656452, 0.742803, 0.743081, 0.561285, -0.364403, -24.5623, 3.9401, -7.03765)
+
 [node name="Node3D4" parent="World" instance=ExtResource("16_gqmmt")]
 transform = Transform3D(-2.20814, -1.45348, 1.41828, -1.97044, 2.04045, -0.976704, -0.491432, -1.65044, -2.45653, -10.2166, 2.0704, 10.3329)
 
 [node name="Node3D3" parent="World" instance=ExtResource("16_gqmmt")]
 transform = Transform3D(0.965926, -0.224144, -0.12941, 0.258819, 0.836516, 0.482963, 0, -0.5, 0.866025, 4.84373, 1.84333, 0.452725)
+
+[node name="Node3D6" parent="World" instance=ExtResource("17_yc10j")]
+transform = Transform3D(-0.733286, -0.411602, -0.54118, -0.489474, 0.872018, 0, 0.471919, 0.264893, -0.840907, -18.1692, 2.9091, -2.29265)
+
+[node name="Node3D9" parent="World" instance=ExtResource("17_yc10j")]
+transform = Transform3D(0.487513, 0.273647, -0.829125, -0.489474, 0.872018, 1.61284e-08, 0.723012, 0.405835, 0.559063, -20.1379, 2.9091, 8.68299)
+
+[node name="Node3D8" parent="World" instance=ExtResource("17_yc10j")]
+transform = Transform3D(0.487513, 0.273647, -0.829125, -0.489474, 0.872018, 1.61284e-08, 0.723012, 0.405835, 0.559063, -21.2741, 2.9091, -9.06071)
+
+[node name="Node3D10" parent="World" instance=ExtResource("17_yc10j")]
+transform = Transform3D(0.487513, 0.273647, -0.829125, -0.489474, 0.872018, 1.61284e-08, 0.723012, 0.405835, 0.559063, -24.3098, 2.9091, -3.15219)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
@@ -242,5 +270,14 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("16_jbj1t")
 theme_override_font_sizes/font_size = 45
 text = "นายธนพล ผาบสิมมา 663380269-9"
+
+[node name="Cutting-board-round" type="MeshInstance3D" parent="."]
+transform = Transform3D(50.4852, 74.6562, -43.3324, -8.98915, 54.4734, 83.3777, 85.8513, -38.1982, 34.2119, -120.991, 0, 6.70298)
+material_override = SubResource("StandardMaterial3D_og1vs")
+mesh = ExtResource("23_y6deb")
+
+[node name="Fish" type="MeshInstance3D" parent="."]
+transform = Transform3D(10.7062, 0, -99.4252, 0, 100, 0, 99.4252, 0, 10.7062, -5.48187, -5.54131, 70.4239)
+mesh = ExtResource("24_y6deb")
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
