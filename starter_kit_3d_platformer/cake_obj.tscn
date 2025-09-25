@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjecgk8tb4ufe"]
+
+[ext_resource type="ArrayMesh" uid="uid://dob1wafpcuy2f" path="res://Nobject/cake.obj" id="1_t861b"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_i6o5a"]
+height = 0.244812
+radius = 0.315918
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Cake" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_t861b")
+
+[node name="platform-grass-large-round2#StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.233203)
+
+[node name="platform-grass-large-round2_StaticBody3D#CollisionShape3D" type="CollisionShape3D" parent="platform-grass-large-round2#StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.120331, 0.736403)
+shape = SubResource("CylinderShape3D_i6o5a")
