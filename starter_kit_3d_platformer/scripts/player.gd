@@ -99,7 +99,7 @@ func handle_effects(delta):
 		else:
 			animation.speed_scale = 1.0
 			
-	elif animation.current_animation != "jump":
+	elif animation.current_animation != "MeleeLib/Jump":
 		animation.play("MeleeLib/Jump", 0.1)
 
 # Handle movement input

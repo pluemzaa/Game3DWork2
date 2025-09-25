@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cm2epo8ep4thc"
+path="res://.godot/imported/donut.obj-9f33016cda2a5e165a18a490342ccdf5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/donut.obj-9f33016cda2a5e165a18a490342ccdf5.mesh"]
+
+source_file="res://Nobject/donut.obj"
+dest_files=["res://.godot/imported/donut.obj-9f33016cda2a5e165a18a490342ccdf5.mesh", "res://.godot/imported/donut.obj-9f33016cda2a5e165a18a490342ccdf5.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

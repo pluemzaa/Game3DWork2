@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsyjs1ekpgk4f"]
+
+[ext_resource type="Texture2D" uid="uid://hx5yhuh2cvxl" path="res://Nobject/pizza.png" id="1_i514n"]
+[ext_resource type="Script" uid="uid://dbikhib0u6m04" path="res://pizza.gd" id="1_ycrcj"]
+[ext_resource type="ArrayMesh" uid="uid://thb8w62gacji" path="res://Nobject/pizza.obj" id="2_ycrcj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_glui1"]
+albedo_texture = ExtResource("1_i514n")
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_ycrcj")
+
+[node name="Pizza" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_glui1")
+mesh = ExtResource("2_ycrcj")

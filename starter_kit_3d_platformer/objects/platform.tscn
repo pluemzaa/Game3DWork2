@@ -9,6 +9,7 @@ height = 0.515686
 radius = 0.901367
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6savy"]
+albedo_color = Color(0.262932, 0.262932, 0.262932, 1)
 albedo_texture = ExtResource("2_k87go")
 
 [node name="platform" instance=ExtResource("1_xagml")]
